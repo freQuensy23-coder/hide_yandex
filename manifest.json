@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "GetMatch Yandex Filter",
+  "version": "1.0",
+  "description": "Скрывает вакансии от Яндекса на сайте getmatch.ru",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://getmatch.ru/vacancies*"],
+      "js": ["content.js"]
+    }
+  ]
+}
